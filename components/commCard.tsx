@@ -6,11 +6,11 @@ interface Props{
   color: ColorValue | undefined
 }
 const CommCard: React.FC<Props> = ({ color }) => {
-const date = new Date();
-const formattedDate = date.toLocaleDateString('en-GB', {
-  day: '2-digit',
-  month: 'short',
-});
+  const date = new Date();
+  const formattedDate = date.toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short',
+  });
 
   return (
     <View style={[style.card, { backgroundColor: color }]}>
